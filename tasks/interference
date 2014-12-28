@@ -1,0 +1,7 @@
+Task: Network Interference Detection
+Description: Debian Network Interference Detection Packages
+ This metapackage will install packages useful for detecting network
+ interference in Debian.
+
+Depends: ooniprobe
+
