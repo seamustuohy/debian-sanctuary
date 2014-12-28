@@ -1,4 +1,4 @@
-Source: debian-privacy
+Source: debian-freedom
 Section: misc
 Priority: extra
 Maintainer: No List Yet <nolistyet@example.com>
@@ -7,10 +7,9 @@ Build-Depends-Indep: debhelper (>= 9),
                      blends-dev (>= 0.6.16.4)
 Standards-Version: 3.9.6
 
-Package: privacy-tasks
+Package: freedom-tasks
 Architecture: all
 Depends: tasksel
-Description: Debian Privacy Tools Tasks
- This package contains tasksel information for the Debian Privacy Tools Pure
- Blend.
+Description: Debian Freedom Tasks
+ This package contains tasksel information for the Debian Freedom Pure Blend.
 
