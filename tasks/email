@@ -1,0 +1,7 @@
+Task: Email Privacy
+Description: Debian Email Privacy Packages
+ This metapackage will install packages useful for browsing anonymously in
+ Debian.
+
+Depends: gnupg, gnupg-curl, gnupg-pkcs11-scd, gnupg-agent, gnupg2, kleopatra
+

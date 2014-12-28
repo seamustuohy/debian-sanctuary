@@ -1,0 +1,16 @@
+Source: debian-privacy
+Section: misc
+Priority: extra
+Maintainer: No List Yet <nolistyet@example.com>
+Uploaders: Iain R. Learmonth <irl@fsfe.org>
+Build-Depends-Indep: debhelper (>= 9),
+                     blends-dev (>= 0.6.16.4)
+Standards-Version: 3.9.6
+
+Package: privacy-tasks
+Architecture: all
+Depends: tasksel
+Description: Debian Privacy Tools Tasks
+ This package contains tasksel information for the Debian Privacy Tools Pure
+ Blend.
+
