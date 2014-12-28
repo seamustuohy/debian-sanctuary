@@ -1,0 +1,7 @@
+Task: Instant Messaging Privacy
+Description: Debian Instant Messaging Privacy Packages
+ This metapackage will install packages useful for private instant messaging in
+ Debian.
+
+Depends: irssi-plugin-otr, libotr, pidgin-otr, mumble
+

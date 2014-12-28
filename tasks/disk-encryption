@@ -1,0 +1,6 @@
+Task: Disk Encryption
+Description: Debian Disk Encryption Packages
+ This metapackage will install packages useful for disk encryption in Debian.
+
+Depends: cryptsetup
+

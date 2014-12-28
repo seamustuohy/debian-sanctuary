@@ -3,5 +3,5 @@ Description: Debian Anonymous Browsing Packages
  This metapackage will install packages useful for browsing anonymously in
  Debian.
 
-Depends: tor, vidalia, tor-geoipdb, tor-arm, torsocks, onioncat, obfsproxy, obfs4proxy, mat, torbrowser-launcher, onionshare
+Depends: tor, vidalia, tor-geoipdb, tor-arm, torsocks, onioncat, obfsproxy, obfs4proxy, mat, torbrowser-launcher, onionshare, corkscrew, flashproxy, gnunet, gnunet-fuse, gnunet-gtk, https-everywhere, iodine, macchanger, mozilla-noscript, openvpn, privoxy
 

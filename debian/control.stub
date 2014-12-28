@@ -10,6 +10,6 @@ Standards-Version: 3.9.6
 Package: freedom-tasks
 Architecture: all
 Depends: tasksel
-Description: Debian Freedom Tasks
+Description: Debian Freedom Tools Tasks
  This package contains tasksel information for the Debian Freedom Pure Blend.
 

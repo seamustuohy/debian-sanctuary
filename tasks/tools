@@ -1,0 +1,7 @@
+Task: Utilities
+Description: Debian Freedom Utilities Packages
+ This metapackage will install packages useful for browsing anonymously in
+ Debian.
+
+Depends: assword, haveged, keepassx, mat, msva-perl, nautilus-wipe, pwgen, secure-delete
+
