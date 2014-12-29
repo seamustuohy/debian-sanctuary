@@ -37,12 +37,14 @@ digraph taxonomy {
 	i2p [label="I2P"];
 	mixmaster [label="Mixmaster"];
 	mat [label="Metadata Anonymisation Toolkit"];
+	freenet [label="Freenet"]
 
 	anonymity->tor;
 	anonymity->gnunet;
 	anonymity->i2p;
 	anonymity->mixmaster;
 	anonymity->mat;
+	anonymity->freenet;
 
 	gnupg [label="GnuPG"];
 	otr [label="OTR"];
@@ -61,7 +63,10 @@ digraph taxonomy {
 
 	censorship_research->ooni;
 
+	namecoin [label="Namecoin"]
+
 	circumvention->tor;
+	circumvention->namecoin;
 
 }
 
