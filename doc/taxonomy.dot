@@ -1,0 +1,67 @@
+
+digraph taxonomy {
+
+	freedom [label="Debian Freedom Tools Pure Blend"];
+
+	privacy [label="Privacy Tools"];
+	censorship [label="Censorship Related Tools"];
+
+	freedom->censorship;
+	freedom->privacy;
+
+	anonymity [label="Anonymity Tools"];
+	cryptography [label="Cryptography Tools"];
+	password [label="Password Management Tools"];
+	file [label="Disk and Filesystem Tools"];
+
+	privacy->anonymity;
+	privacy->cryptography;
+	privacy->password;
+	privacy->file;
+
+	pwgen [label="Password Generators"];
+	pwman [label="Password Managers"];
+
+	password->pwgen;
+	password->pwman;
+
+	secure_delete [label="Secure Deletion"];
+	disk_encryption [label="Disk Encryption"];
+
+	file->secure_delete;
+	file->disk_encryption;
+	file->gnupg;
+
+	tor [label="Tor"];
+	gnunet [label="GNUNet"];
+	i2p [label="I2P"];
+	mixmaster [label="Mixmaster"];
+	mat [label="Metadata Anonymisation Toolkit"];
+
+	anonymity->tor;
+	anonymity->gnunet;
+	anonymity->i2p;
+	anonymity->mixmaster;
+	anonymity->mat;
+
+	gnupg [label="GnuPG"];
+	otr [label="OTR"];
+
+	cryptography->gnupg;
+	cryptography->otr;
+	cryptography->disk_encryption;
+
+	circumvention [label="Censorship Circumvention"];
+	censorship_research [label="Censorship Research"];
+
+	censorship->circumvention;
+	censorship->censorship_research;
+
+	ooni [label="OONI"];
+
+	censorship_research->ooni;
+
+	circumvention->tor;
+
+}
+
