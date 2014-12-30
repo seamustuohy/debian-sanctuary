@@ -33,6 +33,7 @@ Each task (Use Case).
 ### Hazards 
 
 Each line will define an individual threat:
+
 | Hazard       | Description                                     |
 | ----         | ----                                            |
 | Tool Failure | Your computer hardware/software being exploited |
@@ -45,6 +46,7 @@ Each line will define an individual threat:
 ### Information
 
 Categories of information that a Hazard could compromise:
+
 | Information Type | Description                                                                       |
 | ----             | ----                                                                              |
 | Personal         | Personal information about family, generally used for Identity theft or blackmail |
@@ -63,6 +65,7 @@ In an environment with *no* protection the possibility of compromise.
 ### Control Measures 
 
 Based on the Hazard and the Information threatened, define countermeasures to use to mitigate risk.
+
 | #    | Control Measure                          | Description                                                                                 |
 | ---- | ----                                     | ----                                                                                        |
 | 1    | OS Choice                                | A Secure OS with minimal active exploits                                                    |
@@ -92,7 +95,7 @@ Based on the Hazard and the Information threatened, define countermeasures to us
 Tools available brief description and control measures implemented, I have just taken this from my limited uderstanding of these systems, and will need further investigation to be sure of these claims.
 There are also grades of protection provided by packages, which isn't investigated here, but an implementation of some kind of grading may be useful but also difficult.
 
-| Name         | info                                       | Description                                    | Implementes    |
+| Name         | info                                       | Description                                    | Implements     |
 | ----         | ----                                       | ----                                           | ----           |
 | GnuPG        | https://gnupg.org                          | Public-Private Key Cryptography                | 15, 10         |
 | OTR          | https://otr.cypherpunks.ca                 | Private communications over instant messaging  | 13, 12, 15, 10 |
