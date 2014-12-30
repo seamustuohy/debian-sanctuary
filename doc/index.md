@@ -82,35 +82,35 @@ Based on the Hazard and the Information threatened, define countermeasures to us
 Tools available brief description and control measures implemented, I have just taken this from my limited uderstanding of these systems, and will need further investigation to be sure of these claims.
 There are also grades of protection provided by packages, which isn't investigated here, but an implementation of some kind of grading may be useful but also difficult.
 
-| Name       | info                                       | Description                                    | Implementes    |
-| ----       | ----                                       | ----                                           | ----           |
-| GnuPG      | https://gnupg.org                          | Public-Private Key Cryptography                | 15, 10         |
-| OTR        | https://otr.cypherpunks.ca                 | Private communications over instant messaging  | 13, 12, 15, 10 |
-| MixMaster  | https://sourceforge.net/projects/mixmaster | Anonymous Remailer                             | 11, 13         |
-| Mixminion  | https://mixminion.net                      | Anonymous Remailer                             | 11, 13         |
-| Freenet    | https://freenetproject.org                 | Decentralised node driven encrypted network    | 8, 11, 13      |
-| Gnunet     | https://gnunet.org                         | Encrypted peer to peer Network                 | 11, 8          |
-| I2P        | https://geti2p.net                         | Anonymous network layer                        | 11, 13         |
-| Tor        | https://torproject.org                     | Decentralised Node driven Encrypted Network    |                |
-| Namecoin   | http://namecoin.info                       | Anonymous registry                             |                |
-| shred      | see apt                                    | Secure file deletion                           | 5              |
-| tinc       | http://www.tinc-vpn.org                    | encrypted peer to peer network                 | 11             |
-| zyre       | https://github.com                         | Proximity based Peer to peer framework         |                |
-| Retroshare | https://retroshare.sourceforge.net         | friend to friend secure decentralised net      |                |
-| Briar      | https://briarproject.org                   | Proximity based encrypted peer to peer network |                |
-| Pond       | https://pond.imperialviolet.org            | Forward secure async messaging (Experimental)  |                |
-| cjdns      | http://cjdns.info                          | Encrypted IPv6 with PPK for address allocation |                |
-| Mumble     | http://mumble.info                         | Encrypted VoIP                                 |                |
-| Jitsi      |                                            |                                                |                |
-| CCNx       |                                            |                                                |                |
-| Tahoe-LAFS |                                            |                                                |                |
-| Blackadder |                                            |                                                |                |
-| Tribler    |                                            |                                                |                |
-| PSYC       |                                            |                                                |                |
-| Bittorrent |                                            |                                                |                |
-| tox        |                                            |                                                |                |
-| linphone   |                                            |                                                |                |
-|            |                                            |                                                |                |
+| Name         | info                                       | Description                                    | Implementes    |
+| ----         | ----                                       | ----                                           | ----           |
+| GnuPG        | https://gnupg.org                          | Public-Private Key Cryptography                | 15, 10         |
+| OTR          | https://otr.cypherpunks.ca                 | Private communications over instant messaging  | 13, 12, 15, 10 |
+| MixMaster    | https://sourceforge.net/projects/mixmaster | Anonymous Remailer                             | 11, 13         |
+| Mixminion    | https://mixminion.net                      | Anonymous Remailer                             | 11, 13         |
+| Freenet      | https://freenetproject.org                 | Decentralised node driven encrypted network    | 8, 11, 13      |
+| Gnunet       | https://gnunet.org                         | Encrypted peer to peer Network                 | 11, 8          |
+| I2P          | https://geti2p.net                         | Anonymous network layer                        | 11, 13         |
+| Tor          | https://torproject.org                     | Decentralised Node driven Encrypted Network    |                |
+| Namecoin     | http://namecoin.info                       | Anonymous registry                             |                |
+| shred        | see apt                                    | Secure file deletion                           | 5              |
+| tinc         | http://www.tinc-vpn.org                    | encrypted peer to peer network                 | 11             |
+| zyre         | https://github.com                         | Proximity based Peer to peer framework         |                |
+| Retroshare   | https://retroshare.sourceforge.net         | friend to friend secure decentralised net      |                |
+| Briar        | https://briarproject.org                   | Proximity based encrypted peer to peer network |                |
+| Pond         | https://pond.imperialviolet.org            | Forward secure async messaging (Experimental)  |                |
+| cjdns        | http://cjdns.info                          | Encrypted IPv6 with PPK for address allocation |                |
+| Mumble       | http://mumble.info                         | Encrypted VoIP                                 |                |
+| Jitsi        | https://jitsi.org                          | Encrypted VoIP/Video with OTR plugin           |                |
+| CCNx         | https://www.ccnx.org                       |                                                |                |
+| Tahoe-LAFS   |                                            |                                                |                |
+| Blackadder   |                                            |                                                |                |
+| Tribler      |                                            |                                                |                |
+| PSYC         |                                            |                                                |                |
+| Bittorrent   |                                            |                                                |                |
+| tox          |                                            |                                                |                |
+| linphone     |                                            |                                                |                |
+| MonkeySphere |                                            |                                                |                |
 
 These are preliminary and there is a definite need to have thouruogh analysis of these tools bassed on their claims.
 
