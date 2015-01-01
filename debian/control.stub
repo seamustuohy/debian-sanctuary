@@ -1,4 +1,4 @@
-Source: debian-freedom
+Source: debian-sanctuary
 Section: misc
 Priority: extra
 Maintainer: No List Yet <nolistyet@example.com>
@@ -7,9 +7,9 @@ Build-Depends-Indep: debhelper (>= 9),
                      blends-dev (>= 0.6.16.4)
 Standards-Version: 3.9.6
 
-Package: freedom-tasks
+Package: sanctuary-tasks
 Architecture: all
 Depends: tasksel
-Description: Debian Freedom Tools Tasks
- This package contains tasksel information for the Debian Freedom Pure Blend.
+Description: Debian Sanctuary Tasks
+ This package contains tasksel information for the Debian Sanctuary Pure Blend.
 
