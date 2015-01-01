@@ -8,8 +8,14 @@ The system will present tasks related to use cases for the user. It will install
 
 I have used a modified risk assessment for identifying the Threats, and Controls Measures, which will in turn identify the tools required: see [[Risk.odt]]
 
-## links
+## TODO
+* Add packages from the taskfiles to the tools section
+* Identify the control measures of tools
 
+*  
+
+
+## links
 
 Project home
 http://wiki.debian.org/DebianFreedom
@@ -34,14 +40,15 @@ Each task (Use Case).
 
 Each line will define an individual threat:
 
-| Hazard       | Description                                     |
-| ----         | ----                                            |
-| Tool Failure | Your computer hardware/software being exploited |
-| Tool Theft   | Your computer being stolen                      |
-| Theft        | Theft of value                                  |
-| Surveillance | Spying                                          |
-| Infiltration | infiltration into the actual system/protocol    |
-| Manipulation | Manipulation of Objective                       |
+| Hazard       | Description                                         | 
+| ----         | ----                                                | 
+| Tool Failure | Your computer hardware/software being exploited     | 
+| Tool Theft   | Your computer being stolen                          | 
+| Theft        | Theft of value                                      | 
+| Surveillance | Spying                                              | 
+| Infiltration | infiltration into the actual system/protocol        | 
+| Manipulation | Manipulation of Objective                           | 
+| Censorship   | Blocking of content travelling through the internet | 
 
 ### Information
 
@@ -84,8 +91,7 @@ Based on the Hazard and the Information threatened, define countermeasures to us
 | 14   | Platform Selection                       | Choice of platform/network to use based on protection given (https://tosdr.org)             |
 | 15   | Authentication                           | Authentication (less strong then OOB?)                                                      |
 | 16   | System Use Training                      | A Specific system needs to give special usage information to the user                       |
-| 17   | Censorship Resistance                    |                                                                                             |
-|      |                                          |                                                                                             |
+| 17   | Communication Obfuscation                | Allowing communication to concealed                                                         |
 
 
 (* If it is good enough for trade agreements.) 
@@ -95,35 +101,72 @@ Based on the Hazard and the Information threatened, define countermeasures to us
 Tools available brief description and control measures implemented, I have just taken this from my limited uderstanding of these systems, and will need further investigation to be sure of these claims.
 There are also grades of protection provided by packages, which isn't investigated here, but an implementation of some kind of grading may be useful but also difficult.
 
-| Name         | info                                       | Description                                    | Implements     |
-| ----         | ----                                       | ----                                           | ----           |
-| GnuPG        | https://gnupg.org                          | Public-Private Key Cryptography                | 15, 10         |
-| OTR          | https://otr.cypherpunks.ca                 | Private communications over instant messaging  | 13, 12, 15, 10 |
-| MixMaster    | https://sourceforge.net/projects/mixmaster | Anonymous Remailer                             | 11, 13         |
-| Mixminion    | https://mixminion.net                      | Anonymous Remailer                             | 11, 13         |
-| Freenet      | https://freenetproject.org                 | Decentralised node driven encrypted network    | 8, 11, 13      |
-| Gnunet       | https://gnunet.org                         | Encrypted peer to peer Network                 | 11, 8          |
-| I2P          | https://geti2p.net                         | Anonymous network layer                        | 11, 13         |
-| Tor          | https://torproject.org                     | Decentralised Node driven Encrypted Network    |                |
-| Namecoin     | http://namecoin.info                       | Anonymous registry                             |                |
-| shred        | see apt                                    | Secure file deletion                           | 5              |
-| tinc         | http://www.tinc-vpn.org                    | encrypted peer to peer network                 | 11             |
-| zyre         | https://github.com                         | Proximity based Peer to peer framework         |                |
-| Retroshare   | https://retroshare.sourceforge.net         | friend to friend secure decentralised net      |                |
-| Briar        | https://briarproject.org                   | Proximity based encrypted peer to peer network |                |
-| Pond         | https://pond.imperialviolet.org            | Forward secure async messaging (Experimental)  |                |
-| cjdns        | http://cjdns.info                          | Encrypted IPv6 with PPK for address allocation |                |
-| Mumble       | http://mumble.info                         | Encrypted VoIP                                 |                |
-| Jitsi        | https://jitsi.org                          | Encrypted VoIP/Video with OTR plugin           |                |
-| CCNx         | https://www.ccnx.org                       |                                                |                |
-| Tahoe-LAFS   |                                            |                                                |                |
-| Blackadder   |                                            |                                                |                |
-| Tribler      |                                            |                                                |                |
-| PSYC         |                                            |                                                |                |
-| Bittorrent   |                                            |                                                |                |
-| tox          |                                            |                                                |                |
-| linphone     |                                            |                                                |                |
-| MonkeySphere |                                            |                                                |                |
+| Name                | info                                               | Description                                     | Implements     |
+| ----                | ----                                               | ----                                            | ----           |
+| GnuPG               | https://gnupg.org                                  | Public-Private Key Cryptography                 | 15, 10         |
+| OTR                 | https://otr.cypherpunks.ca                         | Private communications over instant messaging   | 13, 12, 15, 10 |
+| MixMaster           | https://sourceforge.net/projects/mixmaster         | Anonymous Remailer                              | 11, 13         |
+| Mixminion           | https://mixminion.net                              | Anonymous Remailer                              | 11, 13         |
+| Freenet             | https://freenetproject.org                         | Decentralised node driven encrypted network     | 8, 11, 13      |
+| Gnunet              | https://gnunet.org                                 | Encrypted peer to peer Network                  | 11, 8          |
+| I2P                 | https://geti2p.net                                 | Anonymous network layer                         | 11, 13         |
+| tor                 | https://torproject.org                             | Decentralised Node driven Encrypted Network     |                |
+| Namecoin            | http://namecoin.info                               | Anonymous registry                              |                |
+| shred               | see apt                                            | Secure file deletion                            | 5              |
+| tinc                | http://www.tinc-vpn.org                            | encrypted peer to peer network                  | 11             |
+| zyre                | https://github.com                                 | Proximity based Peer to peer framework          |                |
+| Retroshare          | https://retroshare.sourceforge.net                 | friend to friend secure decentralised net       |                |
+| Briar               | https://briarproject.org                           | Proximity based encrypted peer to peer network  |                |
+| Pond                | https://pond.imperialviolet.org                    | Forward secure async messaging (Experimental)   |                |
+| cjdns               | http://cjdns.info                                  | Encrypted IPv6 with PPK for address allocation  |                |
+| Mumble              | http://mumble.info                                 | Encrypted VoIP                                  |                |
+| Jitsi               | https://jitsi.org                                  | Encrypted VoIP/Video with OTR plugin            |                |
+| CCNx                | https://www.ccnx.org                               | Content Secured network with name addressing    |                |
+| Tahoe-LAFS          | https://www.tahoe-lafs.org                         | Decentralized cloud storage system              |                |
+| Blackadder          | https://www.fp7-pursuit.eu/PursuitWeb/?page_id=338 | information centric networking                  |                |
+| Tribler             | https://www.tribler.org/                           | Peer to peer file sharing                       |                |
+| Psyced              | http://www.psyced.org/                             | Encrypted distributed chat and messaging system |                |
+| Bittorrent          | https://www.bittorrent.org/                        | Peer to peer file sharing                       |                |
+| tox                 | https://tox.im/                                    | Distributed Encrypted VoIP/video Messaging      |                |
+| linphone            | https://linphone.org                               | Distributed Encrypted VoIP/video Messaging      |                |
+| MonkeySphere        | https://web.monkeysphere.info                      | Extending OpenPGP Web of trust                  |                |
+| OpenVPN             | https://openvpn.net                                | Encrypted network tunnelling VPN                |                |
+| vidalia             | https://www.torproject.org/projects/vidalia.html   | GUI Controller for tor software                 |                |
+| Onioncat            | https://www.onioncat.org                           | An anonymous VPN adapter                        |                |
+| https-everywhere    |                                                    | Force https usage in mozilla browser            |                |
+| mozilla-noscript    |                                                    | Block javascript in mozilla browser             |                |
+| mat                 | https://mat.boum.org                               | Metadata Anonymization tool                     |                |
+| onionshare          |                                                    |                                                 |                |
+| corkscrew           |                                                    |                                                 |                |
+| torsocks            |                                                    | A SOCKS proxy for tor                           |                |
+| obfsproxy           |                                                    |                                                 |                |
+| obfs4proxy          |                                                    |                                                 |                |
+| torbrowser-launcher |                                                    |                                                 |                |
+| flashproxy          |                                                    |                                                 |                |
+| iodine              |                                                    |                                                 |                |
+| macchanger          |                                                    |                                                 |                |
+| privoxy             |                                                    |                                                 |                |
+| cryptsetup          |                                                    |                                                 |                |
+| gnupg-agent         |                                                    | Persistance of GPG instance                     |                |
+| kleopatra           |                                                    |                                                 |                |
+| monkeysign          |                                                    | Leverage PGP's web of trust                     |                |
+| parcimonie          |                                                    |                                                 |                |
+| pinentry            |                                                    |                                                 |                |
+| seahorse            |                                                    | Cryptographic key management                    |                |
+| signing-party       |                                                    |                                                 |                |
+| irssi-plugin-otr    |                                                    |                                                 |                |
+| pidgin-otr          |                                                    |                                                 |                |
+| ooniprobe           | https://ooni.torproject.org/                       | Internet censorship measurement tool            |                |
+| pass                | see apt                                            | Store you passwords with gpg (command line)     |                |
+| assword             | see apt                                            | Secure password management and retrieval        |                |
+| haveged             |                                                    |                                                 |                |
+| keepassx            |                                                    | Password safe                                   |                |
+| msva-perl           |                                                    |                                                 |                |
+| nautilus-wipe       |                                                    |                                                 |                |
+| pwgen               |                                                    | generate secure passwords                       |                |
+| secure-delete       |                                                    | secure data deletion                            |                |
+| claws-mail-pgpmime  |                                                    | PGP mail client plugin                          |                |
+|                     |                                                    |                                                 |                |
 
 These are preliminary and there is a definite need to have thouruogh analysis of these tools bassed on their claims.
 
@@ -142,7 +185,7 @@ The Largest point of failure in all these systems is the user, through misconfig
 Debian Live 
     For Building live images
 
-== Examples ==
+## Examples
 Ham Radio Example of build page:
 http://blends.debian.org/hamradio
 
