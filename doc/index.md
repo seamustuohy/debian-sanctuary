@@ -1,7 +1,5 @@
 # Debian-Sanctuary
 
-Change name to Debian Sanctuary
-
 A Pure Blend that will provide specific privacy protections by the installation of privacy tools on Debian.
 
 The system will present tasks related to use cases for the user. It will install tools for providing the best user protection for a specific task
@@ -18,13 +16,13 @@ I have used a modified risk assessment for identifying the Threats, and Controls
 ## links
 
 Project home
-http://wiki.debian.org/DebianFreedom
+http://wiki.debian.org/DebianSanctuart
 
 The Original Repo
-http://anonscm.debian.org/cgit/blends/projects/freedom.git/ 
+http://anonscm.debian.org/cgit/blends/projects/sanctuary.git/ 
 
 The Git page for edits.
-https://github.com/debian-freedom/debian-freedom.git
+https://github.com/debian-sactuary/debian-sanctuary.git
 
 Info Regarding the Pure blends 
 http://blends.debian.org/blends
