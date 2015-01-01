@@ -1,44 +1,19 @@
-# Debian-Sanctuary
-
-Change name to Debian Sanctuary
-
-A Pure Blend that will provide specific privacy protections by the installation of privacy tools on Debian.
-
-The system will present tasks related to use cases for the user. It will install tools for providing the best user protection for a specific task
-
-I have used a modified risk assessment for identifying the Threats, and Controls Measures, which will in turn identify the tools required: see [[Risk.odt]]
-
-## TODO
-* Add packages from the taskfiles to the tools section
-* Identify the control measures of tools
-
-*  
-
-
-## links
-
-Project home
-http://wiki.debian.org/DebianFreedom
-
-The Original Repo
-http://anonscm.debian.org/cgit/blends/projects/freedom.git/ 
-
-The Git page for edits.
-https://github.com/debian-freedom/debian-freedom.git
-
-Info Regarding the Pure blends 
-http://blends.debian.org/blends
-
+# Online Safety from Tasks and Tools
 
 ## Risk Assessment
 
-### Task 
+I have taken a risk assessment model to attempt to Identify Tasks, Hazards, Control Measures, which should 
+when matched with identified tool combinations provide the best protection for users
 
-Each task (Use Case).
+The risk assessment - [[Risk.odt]]
+
+### Tasks
+
+Each task should be equivelent to some general use case, the tasks will then identify the possible Hazards based of the type of communication and content.
 
 ### Hazards 
 
-Each line will define an individual threat:
+A hazard is a general group of threats based on the motivation/objective behind the threat.
 
 | Hazard       | Description                                         | 
 | ----         | ----                                                | 
